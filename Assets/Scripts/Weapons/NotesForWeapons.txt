@@ -1,0 +1,25 @@
+﻿# Instructions for Creating a New Weapon
+
+## Find Weapon Model
+First, find a proper model for the desired weapon and adjust the transform (position,
+rotation, scale). 
+
+### Adjust Arm Viewmodel to Fit Weapon
+Self-explanatory: Change the rotation of the arms so that the arms are holding the
+gun.
+
+## Rearrange GameObject Hierarchy
+Make sure that the arms are a child of the weapon model.
+In other words:
+     Gun_Model_Object
+     |-----> Arms
+             |-----> etc
+
+NOTE: Make sure that after reparenting and such, the transform of the weapon still
+fits with the viewmodel
+
+## Create a Prefab for the Gun
+Self-explanatory.
+
+## Create Weapon Script for Weapon
+Use other weapon classes as a template and make a script and fill out all the fields.
